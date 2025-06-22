@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Number Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎲 Random Number Generator</h1>
+    <div class="input-group">
+      <label for="min">Minimum:</label>
+      <input type="number" id="min" placeholder="e.g. 1" />
+      <label for="max">Maximum:</label>
+      <input type="number" id="max" placeholder="e.g. 100" />
+    </div>
+    <div class="input-group">
+      <label for="count">How many numbers (1–10)?</label>
+      <input type="number" id="count" min="1" max="10" value="1" />
+    </div>
+    <button onclick="generateRandomNumbers()">Generate</button>
+    <div class="results" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
